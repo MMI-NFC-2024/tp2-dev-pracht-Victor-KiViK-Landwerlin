@@ -1,6 +1,5 @@
 ---
 import GraphicSpecie from '../../components/GraphicSpecie.astro';
-import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths() {
     
     const species = ['Adelie', 'Gentoo', 'Chinstrap'];
@@ -11,6 +10,5 @@ export async function getStaticPaths() {
 }
 const { specie } = Astro.params;
 ---
-<Layout>
-  <GraphicSpecie specie={specie} />
-</Layout>
+
+<GraphicSpecie specie={specie} />
