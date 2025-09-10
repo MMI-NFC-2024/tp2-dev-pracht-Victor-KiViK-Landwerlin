@@ -1,9 +1,13 @@
 <div class="navbar bg-base-100 shadow-sm">
   <div class="flex-1">
-    <a class="btn btn-ghost text-xl">TP 2</a>
+    <a href="/" class="btn btn-ghost text-xl">TP 2</a>
   </div>
   <div class="flex-none">
-    <button class="btn btn-square btn-ghost">
-    </button>
+    <select class="select select-ghost" onchange="window.location.href = '/species/' + this.value">
+      <option disabled selected>Choisir une espece</option>
+      <option value="Adelie">Adelie</option>
+      <option value="Gentoo">Gentoo</option>
+      <option value="Chinstrap">Chinstrap</option>
+    </select>
   </div>
 </div>
